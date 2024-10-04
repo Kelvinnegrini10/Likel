@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" href="/imagens/icon.jpg" type="image/x-icon">
+    <title>Fazer uma Doação - OutubroRosa2024</title>
+</head>
+<body>
+    <header>
+        <h1>Fazer uma Doação</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/HTML/index.html">Início</a></li>
+            <li><a href="/HTML/doacao.html">Doação</a></li>
+            <li><a href="/HTML/campanhas.html">Campanhas</a></li>
+            <li><a href="/HTML/contato.html">Contato</a></li>
+           
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Transparência Financeira</h2>
+        <p>As doações serão utilizadas para:</p>
+        <ul>
+            <li>Pesquisa sobre o câncer de mama</li>
+            <li>Suporte a pacientes e suas famílias</li>
+            <li>Campanhas de conscientização e prevenção</li>
+        </ul>
+<br>
+        <h2>Objetivos de Doação</h2>
+        <p>Meta atual: <strong>R$ 50.000</strong> para apoiar programas de prevenção. Progresso: <strong>R$ 25.000</strong> arrecadados!</p>
+<br>
+        <h2>Formas de Doação</h2>
+        <p>Escolha a forma de doação que mais lhe agrada:</p>
+        <ul>
+            <li>Doação única</li>
+            <li>Doação mensal</li>
+            <li>Doação em homenagem a alguém especial</li>
+        </ul>
+
+<br>
+        <h2>Imagens e Vídeos</h2>
+        <p>Veja como sua contribuição faz a diferença:</p>
+        <video src="/imagens/videoplayback.webm" controls></video>
+
+        <h2>Reconhecimento de Doadores</h2>
+        <p>Com sua permissão, reconhecemos doadores que ajudam na nossa missão.</p>
+<br>
+        <h2>Incentivos</h2>
+        <p>Contribua e ganhe brindes como camisetas ou adesivos exclusivos!</p>
+<br>
+        <h2>Dúvidas?</h2>
+        <p>Confira nossas <a href="#faq">Perguntas Frequentes</a> sobre doações.</p>
+<br>
+        <h2>Colaborações</h2>
+        <p>Agradecemos às empresas parceiras que apoiam nossa causa!</p>
+<br>
+        <form class="donation-form">
+            <div class="form-group">
+                <label for="amount">Valor da Doação (R$):</label>
+                <input type="number" id="amount" name="amount" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Método de Pagamento:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">Cartão de Crédito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="pix">Pix</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="donor-name">Nome do Doador:</label>
+                <input type="text" id="donor-name" name="donor-name" required>
+            </div>
+            <div class="form-group">
+                <label for="donor-email">Email do Doador:</label>
+                <input type="email" id="donor-email" name="donor-email" required>
+            </div>
+            <button type="submit" class="btn">Confirmar Doação</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Outubro Rosa 2024. Todos os direitos reservados.</p>
+        
+        <div class="social-media">
+            <a href="https://www.instagram.com/outubro_rosa_2023?igsh=Z2xibHo0bHEyZzY1" target="_blank">Instagram</a>
+           
+        </div>
+        <p>Email: outubroRosa.org | Telefone: (11) 1234-5678</p>
+    </footer>
+
+
+    <script src="/JS/script.js"></script>
+    <script>
+        document.getElementById('recoverForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Aqui você pode adicionar lógica para enviar um e-mail de recuperação
+            // Por enquanto, redireciona para a página inicial
+            alert('Doação realizada com sucesso ' + document.getElementById('Doação').value);
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
